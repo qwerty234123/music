@@ -371,7 +371,7 @@ li {
     height: 68px;
     font-size: 24px;
     border: none;
-    margin-top: 34px;
+    margin-top: -190px;
     margin-left: 300px;
 }
 
@@ -555,7 +555,14 @@ button:hover {
     display: flex;
     color: #000000;
 }
-
+.text-problem-5{
+    font-family: 'Kadwa', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 48px;
+    font-size: 24px;
+    margin-left: -80px;
+}
 .input {
     font-family: 'Kadwa', sans-serif;
 }
@@ -984,4 +991,55 @@ button:hover {
 
 .next-button:hover {
     background-color: #7bfdd6;
+}
+.people{
+    margin-left: 1100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.container{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.container h1{
+	margin: 30px;
+}
+.counter{
+	width: 30%;
+	display: flex;
+	justify-content: center;
+}
+#increment-btn, #decrement-btn, #reset{
+	height: 50px;
+	width: 120px;
+	padding: 0 40px;
+	border-radius: 10px;
+	font-size: 40px;
+	background-color: #80DCC0;
+	border: 2px solid #80DCC0;
+	color: white;
+	margin: 20px;
+}
+#reset{
+	font-size: 20px;
+}
+#counter-value{
+	height: 50px;
+	min-width: 120px;
+	border-radius: 10px;
+	background-color: rgba(255, 0, 0, 0.187);
+	margin-top: 20px;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grade{
+    margin-top: -200px;
+    margin-left: -50px;
 }
