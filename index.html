@@ -57,6 +57,67 @@
                  </label>
             </form>
         </div>
+            <div class="grade">
+                <div class="container">
+                    <div class="counters">
+
+                        <p class="text-problem-5">Насколько важна проблема</p>
+                        <div class="counter"><button id="increment-btn">+</button>
+                            <div id="counter-value">0</div>
+                            <button id="decrement-btn">-</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <script>let counter = 0;
+
+                    const counterValue = document.getElementById('counter-value');
+                    const incrementBtn = document.getElementById('increment-btn');
+                    const decrementBtn = document.getElementById('decrement-btn');
+                    const resetBtn = document.querySelector('#reset');
+                    const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
+                    const buttons = document.querySelectorAll("button");
+
+                    buttons.forEach(button => {
+                        button.addEventListener("click", () => {
+                            audio.play();
+                        });
+                    });
+
+
+                    // To increment the value of counter
+                    incrementBtn.addEventListener('click', () => {
+                        counter++;
+                        counterValue.innerHTML = counter;
+
+                    });
+
+                    // To decrement the value of counter
+                    decrementBtn.addEventListener('click', () => {
+                        counter--;
+                        counterValue.innerHTML = counter;
+                    });
+
+                    // To reset the counter to zero
+                    resetBtn.addEventListener('click', reset);
+
+                    function reset() {
+                        counter = 0;
+                        counterValue.innerHTML = counter;
+                    }
+
+
+                    buttons.forEach(button => {
+                        button.addEventListener("click", () => {
+                            audio.play();
+                        });
+                    });
+                </script>
+            </div>
+            <button class="button-application" type="button">Отправить</button>
+        </div>
         <button class="button-application" type="button">Отправить</button>
     </div>
 </section>
